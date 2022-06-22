@@ -105,3 +105,6 @@ venv.bak/
 
 # OS X stuff
 .DS_Store
+
+# setupuptools-scm
+tljh/_version.py

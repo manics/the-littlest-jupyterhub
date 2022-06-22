@@ -2,7 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="the-littlest-jupyterhub",
-    version="0.1",
+    use_scm_version={"write_to": "tljh/_version.py"},
+    # 7.0.0 drops support for Python 3.6
+    setup_requires=["setuptools_scm==6.4.2"],
     description="A small JupyterHub distribution",
     url="https://github.com/jupyterhub/the-littlest-jupyterhub",
     author="Jupyter Development Team",
